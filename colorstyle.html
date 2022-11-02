@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 색상속성 */
+        /* 1. 색상을 직접 지정
+        2. 16진수를 사용하여 지정
+        3. rgb()
+        4. rgba() */
+
+        .colorstyle{
+            /* color: crimson; */
+            /* color: #008299; */
+            /* color: rgb(0, 255, 149); */
+            /* color: rgba(0, 0, 0, 0.2);  투명도 지정 */
+            /* background-color: rgb(255, 255, 255); */
+        }
+
+        body{
+            /* background-color: rgb(245, 245, 220); */
+            /* background-image: url(jearong.jpeg); */
+            /* background-position: left top; */
+            /* background-position: 100px 100px; */
+            /* background-repeat: no-repeat;  사진이 배경 한번만 나오게 */
+            /* background-repeat: repeat-x; */   /* 사진이 배경에 x축으로만 표시 */
+            /* background-repeat: repeat-y; */   /* 사진이 배경에 y축으로만 표시 */
+            /* background-size: 60% 40%; */
+        }
+
+        body{
+            font-family: "맑은 고딕";
+        }
+
+        .container{
+            position: relative;
+            background-image: url(images/apple2.jpg);
+            background-repeat: no-repeat;
+            width: 600px;
+            height: 400px;
+            padding: 20px;
+        }
+
+        .content{
+            position: absolute;
+            top: 300px;
+            width: 90%;
+            padding: 10px;
+            background-color: rgba(255,255,255,0.5);
+        }
+
+        h1{
+            font-size: 30px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>하루 한 알의 사과는 의사를 멀리 한다.</h1>
+        </div>
+    </div>
+</body>
+</html>
