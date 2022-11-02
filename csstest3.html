@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 글꼴 */
+        /* .fontstyle {font-family: 궁서, 돋움;} */
+        
+        /* 웹 폰트 */
+        /* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+        .fontstyle {font-family: 'Dancing Script', cursive;} */
+
+        /* 글자 크기 */
+        /* 절대 크기 : px , pt */
+        /* 상대 크기 : em , % / 1em = 100% 기준값에 따라 크기가 바뀜 */
+        /* p {font-size: 1em;}  2.5em = 250% */
+
+        /* 글자 굵기 */
+        /* p {font-weight: bold;} */
+
+        /* 글자 스타일 */
+        /* p {font-style: italic;} */
+        /* p {
+            font-size: 100px;
+            font-family: 돋움;
+        } */
+
+        /* 글자 색상 */
+        /* p {color: red;} */
+
+        /* 글자 밑줄 */
+        /* p {text-decoration: underline;}   /*none, overline, line-through */
+
+        /* 글자 그림자 효과 */
+        /* text-shadow : 가로이동거리 세로이동거리 번짐정도 그림자색상 */
+        /* .shadow1 {
+            text-shadow: 5px 5px 3px black;
+            color: orange;
+        } */
+
+        /* .shadow2 {
+            text-shadow: 5px 5px red;
+        } */
+
+        /* 자간 */
+        /* .letter {letter-spacing: 0.5em;} */
+
+        /* 공백과 줄바꿈 속성 */
+        /* p {
+            width: 150px;
+            background-color: tomato;
+        } */
+
+        /* white-space : normal | nowrap | pre | pre-wrap | pre-line */
+        /* .normal {white-space: normal;}
+        .nowrap {white-space: nowrap;}     공백 X + 줄바꿈 X
+        .pre {white-space: pre;}           공백 O + 줄바꿈 X
+        .prewrap {white-space: pre-wrap;}  공백 O + 줄바꿈 O
+        .preline {white-space: pre-line;}  공백 x + 줄바꿈 O */
+
+        /* 텍스트 정렬(수평정렬) */
+        /* p {
+            border: 1px solid red;
+        } */
+
+        /* text-align : left | right | center | justify */
+        /* .left {text-align: left;}   왼쪽 정렬
+        .right {text-align: right;}   오른쪽 정렬
+        .center {text-align: center;}   가운데 정렬
+        .justify {text-align: justify;}   양쪽 정렬(균등분배) */
+        
+        /* 줄(행) 간격 */
+        /* .line {line-height: 2em;} */
+        /* 글자크기의 2배인 16 * 2 = 32만큼 행간 지정 -> 줄마다 32px을 주는 것이 아닌 전체 크기에서 배분해줌 */
+
+        /* 행간을 이용한 가운데 정렬(수직) */
+        /* .box {
+            width: 200px;
+            height: 200px;
+            background-color: steelblue;
+            text-align: center;
+            line-height: 200px;
+        } */
+
+        /* 글자가 넘치는 기능 제어 */
+        /* overflow*/
+        p {
+            border: 1px solid red;
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        /* 박스보다 글자가 길 경우 생략표시 기능을 만들어줌 - nowrap/hidden/ellipsis 기능 모두를 사용해야 가능 */
+
+        p:hover{
+            overflow: visible;
+        }
+        /* 숨겨진 내용을 커서를 대면 볼 수 있게 해줌 */
+
+    </style>
+
+</head>
+<body>
+    <!-- CSS의 속성 -->
+
+    <p>닷새 만에 다시 이뤄진 북한의 미사일 도발로 한 때 경상북도 울릉군에 공습경보가 내려져 주민들이 긴급 대피했습니다.</p>
+
+    <!-- <p>Taiwan is an island off the coast of China. 
+        It is a prosperous, democratic country. 
+        Most of the world’s computer semiconductor chips come from there. 
+        But there is a problem. The much more giant neighbor says it belongs to them. 
+        The “reunification” of Taiwan with China has been a goal of China for decades.</p>
+
+    <p class="line">Taiwan is an island off the coast of China. 
+        It is a prosperous, democratic country. 
+        Most of the world’s computer semiconductor chips come from there. 
+        But there is a problem. The much more giant neighbor says it belongs to them. 
+        The “reunification” of Taiwan with China has been a goal of China for decades.</p>
+
+    <p class="box">
+        가운데 정렬(수직)
+    </p> -->
+
+
+    <!-- <p class="left">Taiwan is an island off the coast of China. 
+        It is a prosperous, democratic country. 
+        Most of the world’s computer semiconductor chips come from there. 
+        But there is a problem. The much more giant neighbor says it belongs to them. 
+        The “reunification” of Taiwan with China has been a goal of China for decades.</p>
+
+    <p class="right">Taiwan is an island off the coast of China. 
+        It is a prosperous, democratic country. 
+        Most of the world’s computer semiconductor chips come from there. 
+        But there is a problem. The much more giant neighbor says it belongs to them. 
+        The “reunification” of Taiwan with China has been a goal of China for decades.</p>
+
+    <p class="center">Taiwan is an island off the coast of China. 
+        It is a prosperous, democratic country. 
+        Most of the world’s computer semiconductor chips come from there. 
+        But there is a problem. The much more giant neighbor says it belongs to them. 
+        The “reunification” of Taiwan with China has been a goal of China for decades.</p>
+        
+    <p class="justify">Taiwan is an island off the coast of China. 
+        It is a prosperous, democratic country. 
+        Most of the world’s computer semiconductor chips come from there. 
+        But there is a problem. The much more giant neighbor says it belongs to them. 
+        The “reunification” of Taiwan with China has been a goal of China for decades.</p> -->
+
+
+    <!-- <p class="normal">요소의 공백문자 를 어 떻게처리할 지를 정의합니다.</p>
+    <p class="nowrap">요소의        공백문자 를 어 떻게처리할 지를 정의합니다.</p>
+    <p class="pre">요소의            공백문자 를 어                떻게처리할            지를 정의합니다.</p>
+    <p class="prewrap">요소의         공백문자 를 어           떻게처리할             지를 정의합니다.</p>
+    <p class="preline">요소의          공백문자 를 어 떻게처리할 지를            정의합니다.</p> -->
+
+
+    <!-- <p>브라우저 기본 글꼴</p>
+    <p class="fontstyle">글꼴을 적용한 상태</p>
+    <h1 class="shadow1">HTML5</h1>
+    <h1 class="shadow2">HTML5</h1>  
+    <h1 class="letter">HTML5</h1> -->
+
+</body>
+</html>
