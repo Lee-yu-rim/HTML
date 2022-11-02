@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 텍스트 관련 태그 -->
+
+    <h1>＃글씨크기 태그</h1>
+        <h1>제목 표시하기</h1>
+        <h2>제목 표시하기</h2>
+        <h3>제목 표시하기</h3>
+        <h4>제목 표시하기</h4>
+        <h5>제목 표시하기</h5>
+        <h6>제목 표시하기</h6>
+
+    <h1>＃줄바꿈 태그</h1>
+        안녕하세요<br>
+        저는 이유림 입니다<br>
+        사는 곳은 인천 입니다<br />
+
+    <h1>＃수평선 태그</h1>
+        <hr>  
+        <hr />  
+
+    <h1>＃문단 태그</h1>
+        <p>첫번째 문단</p>
+        <p>두번째 문단</p>
+        <p>세번째 문단</p>
+
+    <h1>＃원하는 형식으로 글 표현</h1>
+        <pre>
+        내가 그의 이름을 불러 주기 전에는
+        그는 다만 
+        하나의 몸짓에 지나지 않았다.
+
+        내가 그의 이름을 불러 주었을 때 
+        그는 나에게로 와서
+        꽃이 되었다.
+        </pre>
+
+    <h1>＃공백 표현 태그</h1>
+        홍&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;길&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;동
+
+    <h1>＃글자 강조 태그</h1>
+        글자강조<br>
+        <strong>글자강조</strong><br>
+        <b>글자강조</b>
+
+    <h1>＃글자 기울임 태그</h1>
+        <em>글자기울임</em><br>
+        <i>이태릭체</i>
+    
+    <h1>＃인용구문 태그</h1>
+        <q>인용구문</q>
+
+    <h1>＃형광펜 태그</h1>
+        <mark>형광펜</mark>
+
+    <h1>＃영역 태그</h1>
+        <span>일부 영역에 효과를 주기위해 사용</span>
+
+    <h1>＃목록 표시 태그</h1>
+        <!-- 기호를 이용한 표현 -->
+        <ul>
+            <li>JAVA</li>
+            <li>ORACLE</li>
+            <li>HTML</li>
+        </ul>
+
+        <!-- 순서를 이용한 표현 -->
+        <ol>
+            <li>JAVA</li>
+            <li>ORACLE</li>
+            <li>HTML</li>
+        </ol>
+
+        <!-- 타입을 지정하여 표현 -->
+        <ol type="a">
+            <li>JAVA</li>
+            <li>ORACLE</li>
+            <li>HTML</li>
+        </ol>
+
+
+        <!-- ol과 ul의 중첩 -->
+        <ul>
+            <li>1일차
+                <ol type = "a">
+                    <li>해녀 박물관</li>
+                    <li>낚시 체험</li>
+                </ol>
+            </li>
+            <li>2일차
+                <ol>
+                    <li>용눈이 오름</li>
+                    <li>만장굴</li>
+                </ol>
+            </li>
+        </ul>
+
+        <!-- 용어 설명 표현(계층구조) -->
+        <dl>
+            <dt>hello</dt>
+            <dd>
+                1. [감탄사, 명사] (만났을 때의 인사로) 안녕(하세요), 인사, (전화에서나 남의 관심을 끌 때) 여보세요<br>
+                2. [감탄사, 명사][英] 이런, 어머나(놀라움을 나타냄)<br>
+                3. [감탄사, 명사][비격식] 얼씨구(상대방의 말이 바보 같거나, 상대방이 주의를 기울이지 않고 있다고 여길 때)
+            </dd>
+        </dl>
+
+
+
+    <br><br>
+    <hr>
+
+    
+
+    <h1>＃table tag</h1>
+    <!-- table tag -->
+
+    <figure>  <!--왼쪽 정렬 제목-->
+        <figcaption> 
+            <p>국내 총 생산량</p>
+        </figcaption>
+
+        <!--4행 4열 테이블-->
+        <table border="1px" height="500" width="500px">  <!-- 단위 : px(기본값) , % -->
+        <!--<caption>  가운데 정렬 제목
+                <strong>생산연도</strong>
+            </caption>-->  
+            
+            <tr>    <!--행-->
+                <td>1</td><td>2</td><td>3</td><td>4</td>    <!--열-->  
+            </tr>
+
+            <tr>    
+                <th>5</th><th>6</th><th>7</th><th>8</th>   <!--th : 가운데 정렬 및 굵은 글씨-->   
+            </tr>
+            
+            <tr>    
+                <td>9</td><td>10</td><td>11</td><td>12</td>  
+            </tr>
+
+            <tr>   
+                <td>13</td><td>14</td><td>15</td><td>16</td>    
+            </tr>
+        </table>
+    </figure>
+
+    <br><br>
+
+    <h1>＃셀병합</h1>
+    <!-- 셀 병합 -->
+    <table border="1" height="350" width="350">
+        <tr>
+            <td rowspan="2">1</td><td colspan="2">2</td>  <!--행병합 : rowspan="합칠 셀의 갯수"--> <!--열병합 : colspan="합칠 셀의 갯수"-->
+        </tr>
+
+        <tr>
+            <td>5</td><td>6</td>    
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h1>＃논리 태그</h1>
+    <!-- 논리 태그 : 시각 장애인을 위한 태그(음성) -->
+    <table border="1" height="350" width="350">
+        <caption>3행 2열</caption>
+        <thead>
+            <tr>
+                <td>1</td><td>2</td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>3</td><td>4</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>5</td><td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

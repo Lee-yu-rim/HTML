@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form : 직접 작성 방식 / 선택 방식 -->
+    <form method="" action="http://www.daum.net" name="member">
+        <!-- 직접 작성 방식 -->
+        <fieldset>
+            <legend>개인정보</legend>
+            <label for="id">아이디(필수)</label>
+            <input type="text" name="id" id="id" autofocus required placeholder="아이디 입력" />   
+            <!--autofocus : 시작 화면에서 마우스 커서 놓는 곳-->
+            <!--required : 필수 입력-->
+            <!--placeholder : 기본값 표시 -> 값 입력시 사라짐-->
+            <br>                                                         
+            <label for="pwd">비밀번호(4~8글자 사이)</label>
+            <input type="password" name="pwd" id="pwd" size="50" maxlength="8" minlength="4"/>
+            <!-- size : 크기 조정 -->
+            <!-- maxlength : 최대 글자수 -->
+            <!-- minlength : 최소 글자수 -->
+            <br>
+            <label for="time">상영시간</label>
+            <input type="text" name="time" id="time" value="오전 09:00 ~ 오후 12:00" readonly />
+            <!-- value : 기본값 표시 -> 사라지지 않고 값 수정 가능 -->
+            <!-- readonly : 값을 표시만 하고 수정 불가 -->
+            <br>
+        </fieldset>
+
+        <br>
+        
+        <!-- 선택 방식 -->
+        <fieldset>
+            <legend>기본정보 선택</legend>
+            <!-- 라디오 버튼 타입 : 여러 항목 중 단일 선택 기능 -->
+            <input type="radio" name="subject" value="java" checked />JAVA
+            <input type="radio" name="subject" value="html" />HTML
+            <input type="radio" name="subject" value="sql" />SQL   <!--name 속성을 동일하게 설정하여 하나의 그룹으로 묶어줌-->
+            <!-- checked : 기본 체크 항목 -->
+            <br>
+            <input type="radio" name="grade" value="1" />1학년
+            <input type="radio" name="grade" value="2" />2학년
+            <input type="radio" name="grade" value="3" checked />3학년
+            <br>
+
+            <!-- 체크 박스 타입 : 여러 항목 중 0개 또는 다중 선택 기능 -->
+            <input type="checkbox" name="hobby" value="축구" />축구
+            <input type="checkbox" name="hobby" value="야구" checked >야구
+            <input type="checkbox" name="hobby" value="농구" />농구
+        </fieldset>
+
+        <br>
+
+        <label for="email">이메일</label>
+        <input type="email" name="email" id="email" />
+        <br><br>
+        <label for="number">수량</label>
+        <input type="number" name="number" id="number" />
+        <br><br>
+        <label for="color">색상</label>
+        <input type="color" name="color" id="color" />
+        <br><br>
+        <label for="start">시작일</label>
+        <input type="date" name="date" id="start" />
+        <label for="end">종료일</label>
+        <input type="date" name="date" id="end" />
+        <br><br>
+        <label for="start">시작일</label>
+        <input type="datetime-local" name="date" id="start" />
+        <label for="end">종료일</label>
+        <input type="datetime-local" name="date" id="end" />
+        <br><br>
+
+        <label for="job">직업선택</label>
+        <select name="job">
+            <option value="0">--선택--</option>
+            <option value="1">기자</option>
+            <option value="2" selected>개발자</option>
+            <option value="3">경호원</option>
+        </select>
+        <!-- selected : 기본값 표시 -->
+        <br><br>
+
+        <label for="job">직업선택</label>
+        <select name="job" size="4">
+            <option value="0">--선택--</option>
+            <option value="1">기자</option>
+            <option value="2" >개발자</option>
+            <option value="3">경호원</option>
+        </select>
+
+        <br><br>
+
+        <label for="content">상품소개</label>
+        <textarea name="content" id="content" rows="10" cols="50" placeholder="상품소개"></textarea>
+
+        <br><br>
+
+        <!-- 첨부 파일 기능 -->
+        <label for="fileup">첨부파일</label>
+        <input type="file" multiple>
+
+        <br><br>
+
+        <!-- 버튼 : 입력폼에 입력된 데이터를 전송 -->
+        <!-- form 속성중 action에 입력된 곳으로 전송 -->
+        <input type="submit" value="회원가입" />   <!--데이터 전송-->
+        <input type="reset" value="취소" />    <!--데이터 초기화-->
+        <input type="button" value="메세지 실행" onclick="alert('메세지 보여주기')" />  <!--사용자 지정 역할 버튼-->
+        <button type="button" onclick="alert('메세지 보여주기')">메세지 실행2</button>
+        <!-- button / submit / reset -->
+
+    </form>
+
+</body>
+</html>

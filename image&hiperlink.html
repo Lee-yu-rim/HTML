@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>＃이미지 삽입하기</h1>
+    <!-- 절대경로를 이용한 이미지 삽입 -->
+    <h1>절대경로</h1>
+    <img src="C:\work\htmlcssworkspace\sea.jpeg" alt="바다" />  
+
+    <br>
+
+    <!-- 상대경로를 이용한 이미지 삽입 -->
+    <h1>상대경로</h1>
+
+    <h3>동위</h3>
+    <!--html 파일과 이미지 파일이 같은 폴더 안에 위치할 때-->
+    <img src="sea.jpeg" alt="바다" />   <!--alt : 설명글(이미지 잘못 읽어올 경우)/음성 => 웹표준 방식 준수-->
+
+    <h3>상위</h3>
+    <!--이미지 파일이 html 파일의 상위폴더 안에 위치할 때-->
+    <img src="../sea.jpeg" heigt="150" width="150" alt="바다" />
+
+    <!--이미지 파일이 html 파일의 하위폴더 안에 위치할 때-->
+    <h3>하위</h3>
+    <img src="images\sea.jpeg" heigt="200" width="200" alt="바다" />
+
+    <!--이미지 링크(url)를 통해 삽입-->
+    <h3>url 사용하기</h3>
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEwMDRfMjcy%2FMDAxNjY0ODQ0MDMyMDg2.9l6Xd-QWfIRz7FDIYQARap952vAizFagEyEdKH-yCvQg.PAw9lv5pwktZL0-MKWDVUPpqo1YPJJLQXY2imfuMaEEg.JPEG.english_today%2FKakaoTalk_20221004_092150768.jpg&type=sc960_832" />
+    
+
+
+    <br><br>
+
+
+
+    <!-- 하이퍼링크 -->
+    <h1>＃하이퍼링크</h1>
+
+    <!-- <a href="파일위치(상대경로/절대경로), url">화면에 나타나는 부분 </a> -->
+
+    <a href="tag.html" target="_self">이번주 로또 1등 당첨번호 </a>
+    <br>
+    <a href="tag.html" target="_blank">이번주 로또 1등 당첨번호 </a>  <!--새창띄우기-->
+    <br>
+    <a href="https://www.naver.com/"><img src="naver.png" </a>
+    <br>
+
+    <!-- 한 페이지 내에서 문서이동 -->
+    <a href="#content1">한줄평 </a>
+    <a href="#content2">반품/환불 </a>
+    <a href="#content3">도서정보 </a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <a id="content1">한줄평 위치</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="content2">반품/환불 위치</a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="content3">도서정보 위치</a>
+
+    <a href="#top"><h1>맨위로</h1> </a>
+    
+    <br><br>
+
+    <!-- 이미지에 특정영역에만 링크 걸기 -->
+    <h1>＃이미지링크</h1>
+    <img src="cat.jpeg" alt="고양이" usemap="#cutecat" />
+    <map name="cutecat">
+        <area shape="rect" coords="29,538,264,718" href="https://www.naver.com/" target="_blank" />    <!--모양과 좌표, 링크 설정-->
+    </map>
+
+    <br><br>
+
+    <img src="jearong.jpeg" alt="재롱이" usemap="#jjangjearong" />
+    <map name="jjangjearong">
+        <area shape="rect" coords="206 272 265 307" href="https://www.youtube.com/channel/UC0w2Xg4UB8ip-QnZnHpFB-g" target="_blank" />
+    </map>
+
+    <br><br>
+
+
+</body>
+</html>
