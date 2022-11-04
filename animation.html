@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 이동 속성 */
+        /* translate */
+
+        /* .movex:hover{
+            transform: translateX(50px);
+        } */
+
+        /* .movey:hover{
+            transform: translateY(50px);
+        } */
+
+        /* .movexy:hover{
+            transform: translate(10px,20px);
+        } */
+
+        /* 확대 축소 속성 */
+        /* scale */
+        /* .origin{
+            width: 210px;
+            height: 200px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+        }
+        .scalex:hover{
+            transform: scaleX(1.2);
+        }
+
+        .scaley:hover{
+            transform: scaleY(1.2);
+        }
+
+        .scale:hover{
+            transform: scale(0.7);
+        } */
+
+        /* 회전 속성 */
+        /* rotate */
+        /* .origin{
+            width: 250px;
+            height: 226px;
+            border: 1px solid black;
+            margin: 40px;
+            float: left;
+            perspective: 200px;  /* perspective : 원근감 
+        }  */
+
+
+        /* .scalex:hover{
+            transform: rotateX(45deg);
+        }
+
+        .scaley:hover{
+            transform: rotateY(45deg);
+        }
+
+        .scale:hover{
+            transform: rotateZ(45deg);
+        } */ 
+
+        /* 변화 속성 */
+        /* transition-xxx */
+        /* .tr1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(52, 133, 255);
+            transition-property: width, height;
+            transition-duration: 2s,1s;
+            transition-property: background-color,transform,width,height;
+            transition-duration: 2s,3s;
+            transition-delay: 1s;
+        }
+        /* width는 2초동안, heigt는 1초동안 크기 변화가 일어남 */
+
+        /* .tr1:hover{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 136, 40);
+            transform: rotate(180deg);
+        } */
+
+        /* 애니메이션 속성 */
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            animation-name: change-bg;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+
+        @keyframes change-bg{
+            /* from ~ to  */
+            from{
+                background-color: aqua;
+                border: 1px solid black;
+            }
+            to{
+                background-color: blueviolet;
+                border: 2px double yellow;
+                border-radius: 50%;
+            }
+
+            /* 0% {
+
+            }
+
+            50%{
+
+            }
+
+            100%{
+
+            } */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div></div>
+
+    <!-- <div class="tr1"></div> -->
+
+    <!-- <div class="origin">
+        <div class="scalex">
+            <img src="images/img1.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="scaley">
+            <img src="images/img1.jpg">
+        </div>
+    </div>
+    <div class="origin">
+        <div class="scale">
+            <img src="images/img1.jpg">
+        </div>
+    </div> -->
+</body>
+</html>

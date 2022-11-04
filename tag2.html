@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자 
+        1. 전체 선택자   * { }
+        2. 태그 선택자   p { }
+        3. 클래스 선택자   .color { }
+        4. 아이디 선택자   #textsize { } 
+        5. 그룹 선택자   h1, p { } */
+
+        /* 연결 선택자 */
+
+        /* 후손 선택자 : section 태그 하위에 있는 모든 ul 태그에 적용한다.(자식+후손) */
+        /* section ul{
+            border: 1px solid red;
+        } */
+
+        /* 자식 선택자 : 부모 태그 밑에 있는 자식요소에만 적용한다.(후손은 적용 x) */
+        /* section > p{
+            color: rgb(0, 81, 255);
+        } */
+
+        /* 형제 선택자 : 같은 레벨에 작성된 요소 중 바로 아래 동생에 적용됨 */
+        /* p + ul{
+            background-color: yellowgreen;
+        } */
+        /* ==> p 태그와 ul 태그는 같은 레벨에 작성되었으므로 형제 태그이고, p태그는 첫째, 바로 아래 ul태그는 둘째, 마지막 ul태그가 셋째라고 생각했을 때 둘째인 ul태그에만 적용된다 */
+
+        /* 동생들(모든 형제)에 적용하는 법 */
+        /* p ~ ul{
+            color: red;
+        } */
+
+        /* 속성 선택자 */
+        /* 태그 [속성명] { } */
+        /* a[href] {
+            background-color: yellow;
+        } */
+        
+        /* a[target="_blank"] {
+            background-color: aquamarine;
+        } */
+
+        /* a 태그의 가상 선택자
+        1. link
+        2. visited
+        3. hover
+        4. active */
+
+        /* 링크가 걸려있는 상태 */
+        a:link{
+            text-decoration: none;
+        }
+
+        /* 마우스를 링크에 가져다 댄 상태 */
+        a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+
+        /* 마우스로 클릭하고 있는 상태 */
+        a:active{
+            color: rgb(45, 255, 56);
+        }
+
+        /* 링크를 클릭하고 온 상태 */
+        a:visited{
+            color: rgb(43, 226, 150);
+        }
+
+        /* 상태 선택자 */
+
+        /* 대상이 체크 되었을 때 */
+        input:checked + span{
+            color: orange;
+        }
+
+        /* 구조 선택자 */
+        ul li{
+            float: left;
+            border: 1px solid #000;
+            list-style-type: none;
+            width: 50px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* 짝수/홀수를 이용하여 칸에 번갈아서 색 다르게 넣기 */
+        li:nth-child(2n+1){
+            background-color: rgb(145, 255, 218);
+        }
+
+        li:nth-child(2n){
+            background-color: rgb(194, 255, 125);
+        }
+
+        li:first-child{
+            border-radius: 20px 0px 0px 20px;
+        }
+
+        li:last-child{
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        p:hover{
+            color: cadetblue;
+        }
+
+        /* img:hover{
+            background-image: url(images/jearong.jpeg);
+            width: 480px;
+            height: 840px;
+        } */
+
+        .top-img:hover{
+            width: 190px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- <img src="images/jearong.jpeg"> -->
+
+    <div><img src="images/dog1.png" class="top-img"></div>
+
+    <!-- <p>마우스가 올라옵니다.</p> -->
+
+    <!-- <ul>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+    </ul> -->
+
+    <!-- <a href="http://www.naver.com">네이버</a>
+    <br>
+    <a href="http://www.daum.net">다음</a>
+    <br>
+    <a href="http://www.google.co.kr">구글</a>
+    <br>
+
+    <input type="radio" name="hobby"><span>운동</span>
+    <input type="radio" name="hobby"><span>독서</span> -->
+
+    <!-- <section id="container">
+        <p>1번p</p>
+        <ul>
+            <li>직접통화</li>
+            <li>문자보내기</li>
+            <li>
+                <p>2번p</p>
+                <ul>
+                    <li>1인</li>
+                    <li>2인</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="#" target="_blank">HTML</a></li>
+            <li><a href="#">JAVA</a></li>
+        </ul>
+    </section> -->
+</body>
+</html>
